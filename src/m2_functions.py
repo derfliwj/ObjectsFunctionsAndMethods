@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Wesley Derflinger.
 """
 
 ########################################################################
 #
-# TODO: 1. PUT YOUR NAME IN THE ABOVE LINE and...
+# DONE: 1. PUT YOUR NAME IN THE ABOVE LINE and...
 #
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
@@ -34,9 +34,12 @@ def main():
     window = rg.TurtleWindow()
 
     turtle1()
+    turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
+
 
     window.close_on_mouse_click()
 
@@ -103,9 +106,40 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+
+    Wes = rg.SimpleTurtle()
+    Wes.pen = rg.Pen('orange', 10)
+    Wes.backward(150)
+    Wes.left(90)
+    Wes.forward(300)
+    Wes.right(360)
+    Wes.backward(300)
+
+def turtle5():
+
+    bonnie = rg.SimpleTurtle()
+    clyde = rg.SimpleTurtle()
+    bonnie.pen = rg.Pen('burlywood2', 20)
+    clyde.pen = rg.Pen('DarkGoldenrod1', 10)
+    bonnie.forward(300)
+    bonnie.right(45)
+    bonnie.forward(50)
+    bonnie.right(45)
+    bonnie.forward(250)
+    clyde.backward(300)
+    clyde.left(45)
+    clyde.backward(50)
+    clyde.right(45)
+    clyde.backward(250)
+
+
+
+
+
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -137,7 +171,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -167,7 +201,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -183,7 +217,7 @@ def turtle3():
 
 ########################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
